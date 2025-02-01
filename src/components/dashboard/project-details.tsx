@@ -15,7 +15,7 @@ const ProjectDetails = ({ project }) => {
               {project.title}
             </CardTitle>
             <div className="flex gap-2 mt-2">
-              {project.technologies?.map((tech) => (
+              {project.technologies?.map((tech: any) => (
                 <Badge key={tech} variant="secondary" className="text-sm">
                   {tech}
                 </Badge>
@@ -44,13 +44,6 @@ const ProjectDetails = ({ project }) => {
               </a>
             )}
           </div>
-        </div>
-        <div className="flex items-center text-sm text-muted-foreground">
-          <Calendar className="w-4 h-4 mr-2" />
-          {new Date(project.startDate).toLocaleDateString()} -
-          {project.endDate
-            ? new Date(project.endDate).toLocaleDateString()
-            : "Present"}
         </div>
       </CardHeader>
 

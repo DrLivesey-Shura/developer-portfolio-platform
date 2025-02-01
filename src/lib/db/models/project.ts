@@ -37,12 +37,6 @@ const ProjectSchema = new mongoose.Schema<Project>(
     },
     imageUrl: {
       type: String,
-      validate: {
-        validator: (v: string) => {
-          return v === "" || /^https?:\/\//.test(v);
-        },
-        message: "Invalid image URL",
-      },
     },
     userId: {
       type: String,
