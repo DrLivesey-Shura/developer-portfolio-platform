@@ -9,6 +9,7 @@ export interface Post {
   coverImage?: string;
   tags?: string[];
   status: "draft" | "published";
+  views?: number;
   createdAt: Date;
   updatedAt: Date;
 }

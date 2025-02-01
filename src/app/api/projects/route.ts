@@ -34,8 +34,6 @@ export async function POST(req: NextRequest) {
     }
 
     const projectData = await req.json();
-    console.log(projectData);
-    console.log(session.user.id);
 
     const newProject = new Project({
       ...projectData,
