@@ -86,4 +86,4 @@ If you have any questions or suggestions, please open an issue or contact us at 
 
 ---
 
-Made with ❤️ by [Merah Alaeddine]
+Made with ❤️ by Merah Alaeddine
